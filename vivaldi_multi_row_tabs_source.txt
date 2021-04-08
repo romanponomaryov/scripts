@@ -1,0 +1,92 @@
+/* multiline tabs */
+#tabs-tabbar-container {
+    height: auto !important;
+}
+.resize {
+    display: block !important;
+    -webkit-app-region: none;
+}
+.tab-strip {
+    display: block;
+    position: relative;
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: green; */
+    max-height: 90px;
+    overflow-y: scroll;
+}
+
+.tab-strip::-webkit-scrollbar {
+    background: transparent;
+    border: none;
+    width: 10px;
+    height: 0;
+}
+.tab-strip::-webkit-scrollbar-corner,
+.tab-strip::-webkit-scrollbar-track {
+    background: transparent;
+    border: none;
+}
+.tab-strip::-webkit-scrollbar-button {
+    display: none;
+}
+.tab-strip::-webkit-scrollbar-thumb {
+    width: 10px;
+    border: none;
+    border-radius: min(5px, var(--radius));
+}
+
+.tab-strip > span {
+    display: inline-block;
+}
+
+.tab-strip > span > .tab-position {
+    left: 26px !important;
+    position: relative;
+    height: 30px !important;
+    width: auto !important;
+}
+
+.tab-strip > span > .tab-position > .tab {
+    left: 0px !important;
+    position: relative;
+    height: 30px !important;
+    /* width: auto !important; */
+    border: 1px solid grey;
+}
+.tab-strip > span > .tab-position > .tab:not(.pinned) {
+    width: 220px !important;
+}
+.tab-strip > span > .tab-position > .tab.pinned {
+    width: 30px !important;
+}
+
+.tab-strip > span > .tab-position > .tab.pinned > .tab-header > span.title:before {
+    content: '*';
+    font-family: "Courier New", serif;
+    margin-bottom: -20px;
+}
+
+.tab-header > .favicon > svg {
+    height: 17px;
+}
+
+#tabs-container .tab.tab-small.tab-mini .tab-header .title,
+#tabs-container .tab.pinned.tab-mini .tab-header .title {
+    display: flex !important;
+}
+
+.toolbar-tabbar > .newtab {
+    top: 7px !important;
+    left: 30px !important;
+    position: fixed !important;
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: red; */
+}
+.tab-position {
+--PositionX: 0px  !important;
+}
